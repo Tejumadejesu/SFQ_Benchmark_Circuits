@@ -1,3 +1,10 @@
+// Verilog
+// 4 inputs
+// 1 outputs
+// 3 D-type flipflops
+// 2 inverters
+// 8 gates (1 ANDs + 1 NANDs + 2 ORs + 4 NORs)
+
 module dff (CK,Q,D);
 input CK,D;
 output Q;
