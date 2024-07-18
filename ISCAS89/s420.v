@@ -1,6 +1,6 @@
 //# 18 inputs
 //# 1 outputs
-//# 21 splitters
+//# 22 splitters
 //# 16 D-type flipflops
 //# 78 inverters
 //# 140 gates (49 ANDs + 29 NANDs + 28 ORs + 34 NORs)
