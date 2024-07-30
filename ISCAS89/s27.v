@@ -23,7 +23,7 @@ output G17;
   wire SPL3_OUT1, SPL3_OUT2, SPL4_OUT1, SPL4_OUT2, SPL5_OUT1, SPL5_OUT2;
 
   dff DFF_0(CK,G5,G10);
-  dff DFF_1(CK,G6,G11);
+  dff DFF_1(CK,G6,SPL3_OUT2);
   dff DFF_2(CK,G7,G13);
 
   // Adding SPL gates
@@ -34,7 +34,7 @@ output G17;
   spl SPL4(SPL4_OUT1, SPL4_OUT2, SPL3_OUT1); // Split G11 second level
 
   not NOT_0(G14, G0);
-  not NOT_1(G17, SPL3_OUT2); // Use SPL3_OUT2 instead of G11
+  not NOT_1(G17, SPL4_OUT2); // Use SPL3_OUT2 instead of G11
   and AND2_0(G8, SPL0_OUT1, G6); // Use SPL0_OUT1 instead of G14
   or OR2_0(G15, SPL2_OUT1, SPL1_OUT1); // Use SPL2_OUT1 instead of G12, SPL1_OUT1 instead of G8
   or OR2_1(G16, G3, SPL1_OUT2); // Use SPL1_OUT2 instead of G8
