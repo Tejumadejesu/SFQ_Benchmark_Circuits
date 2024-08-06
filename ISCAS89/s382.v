@@ -1,6 +1,7 @@
 //# 3 inputs
 //# 6 outputs
 //# 21 D-type flipflops
+//# 145 splitters
 //# 59 inverters
 //# 99 gates (11 ANDs + 30 NANDs + 24 ORs + 34 NORs)
 
@@ -239,7 +240,7 @@ output G301,G302,G303,G306,G304,G305;
   spl SPL142(SPL142_OUT1, SPL142_OUT2, G172);//first level split of G142
   spl SPL143(SPL143_OUT1, SPL143_OUT2, SPL142_OUT1);
   spl SPL144(SPL144_OUT1, SPL144_OUT2, SPL142_OUT2);
-  spl SPL145(SPL145_OUT1, SPL145_OUT2, --);
+  
   
   
   
