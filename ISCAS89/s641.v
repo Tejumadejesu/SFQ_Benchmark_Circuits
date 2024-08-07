@@ -3,7 +3,7 @@
 //# 146 Splitter
 //# 19 D-type flipflops
 //# 272 inverters
-//# 170 gates (142 ANDs + 4 NANDs + 24 ORs + 0 NORs)
+//# 160 gates (132 ANDs + 4 NANDs + 24 ORs + 0 NORs)
 
 module dff (CK,Q,D);
 input CK,D;
